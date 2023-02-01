@@ -1,0 +1,24 @@
+{
+  "name": "eos_fhir_terminology_api",
+  "version": "1.0.0",
+  "description": "An access wrapper around the NHS terminology server fhir api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nialldorgan/eos_fhir_terminology_api.git"
+  },
+  "keywords": [
+    "FHIR",
+    "Terminology",
+    "API"
+  ],
+  "author": "Niall Dorgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nialldorgan/eos_fhir_terminology_api/issues"
+  },
+  "homepage": "https://github.com/nialldorgan/eos_fhir_terminology_api#readme"
+}
