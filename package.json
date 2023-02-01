@@ -2,9 +2,15 @@
   "name": "eos_fhir_terminology_api",
   "version": "1.0.0",
   "description": "An access wrapper around the NHS terminology server fhir api",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/eos_fhir_terminology_api.min.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "webpack --config dev.config.js",
+    "build": "npm run prod & npm run unpkg",
+    "prod": "webpack --config prod.config.js",
+    "unpkg": "webpack --config cdn.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/nialldorgan/eos_fhir_terminology_api/issues"
   },
-  "homepage": "https://github.com/nialldorgan/eos_fhir_terminology_api#readme"
+  "homepage": "https://github.com/nialldorgan/eos_fhir_terminology_api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.27.2",
+    "regenerator-runtime": "^0.13.11",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
